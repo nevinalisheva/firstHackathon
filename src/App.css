@@ -2,6 +2,13 @@
   box-sizing: border-box;
   margin: 0;
 }
+:root {
+  --light-red: #f5624d;
+  --red: #cc231e;
+  --light-green: #34a65f;
+  --dark-green: #0f8a5f;
+  --dark-blue: #235e6f;
+}
 
 .App {
   text-align: center;
@@ -40,4 +47,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#map {
+  height: 180px;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
