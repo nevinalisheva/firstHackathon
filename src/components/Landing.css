@@ -1,0 +1,43 @@
+.landing {
+    height: 100vh;
+    /* background-color: red; */
+    background-image: url("../../public/tree.jpeg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.heading {
+    color: white;
+    padding-top: 20%;
+    /* font-style: italic; */
+    font-family: cursive;
+    transform: rotate(-10deg);
+    font-size: 1.5rem;
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.button {
+    border: 1px solid white;
+    color: white;
+    padding: 16px 32px;
+    /* content: ; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    /* position: relative; */
+    bottom: 0;
+}
+
+.buttons {
+    bottom: 0
+}
