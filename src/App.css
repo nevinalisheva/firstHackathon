@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 :root {
   --light-red: #f5624d;
   --red: #cc231e;
