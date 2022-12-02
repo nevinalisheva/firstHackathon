@@ -22,11 +22,20 @@ const ListPage = ({ posts }) => {
     .filter((post) => post.bezirk.includes(district))
     .map((post, i) => <Post key={i} post={post} />);
   return (
-    <main >
-      <div className="districts">
-        {districts.map((e) => {
+
+    <main>
+      <div>
+        <button value="" onClick={(e) => setDistrict(e.target.value)}>
+          {" "}
+          Show all
+        </button>
+        {districts.map((e, i) => {
           return (
-            <button className="filter-district" value={e} onClick={(e) => setDistrict(e.target.value)}>
+            <button
+              key={i}
+              value={e}
+              onClick={(e) => setDistrict(e.target.value)}
+            >
               {e}
             </button>
           );
