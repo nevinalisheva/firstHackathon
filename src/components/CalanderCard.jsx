@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./Calander.css";
 // import Modal from "react-modal";
 import Popup from "./Popup";
-import { FaBeer } from "react-icons/fa";
+//import { FaBeer } from "react-icons/fa";
 import song from "../song.mp3";
 
 const CalanderCard = ({ date, open }) => {
@@ -11,7 +11,7 @@ const CalanderCard = ({ date, open }) => {
     new Audio(song).play();
   };
   const [isOpen, setIsOpen] = useState(false);
-  const [isplaying, setIsPlaying] = useState(isOpen);
+  //const [isplaying, setIsPlaying] = useState(isOpen);
   //   const [playing, setPlaying] = useState(false);
   const toggleModal = () => {
     setIsOpen(!isOpen);

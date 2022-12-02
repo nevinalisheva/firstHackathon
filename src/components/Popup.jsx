@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./Calander.css";
-import axios from "axios";
 const Popup = ({ date, children, toggleModal, today }) => {
   //   if (!open) return null;
-  const [isActive, setIsActive] = useState(false);
+  /* const [isActive, setIsActive] = useState(false);
 
   const handleClick = (event) => {
     // 👇️ toggle isActive state variable
     setIsActive((current) => !current);
-  };
+  }; */
   return ReactDOM.createPortal(
     <div className="modal">
       <div className="overlay"></div>
@@ -24,12 +23,14 @@ const Popup = ({ date, children, toggleModal, today }) => {
               <img
                 className="icons rotate"
                 src="https://cdn.pixabay.com/photo/2020/12/12/05/34/wreath-5824508_1280.png"
+                alt="christmas-deco"
               />
             </div>
             <h3>Image of the day</h3>
             <img
               className="modal-img"
               src="https://images.pexels.com/photos/4551907/pexels-photo-4551907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="christmas-deco"
             />
             <div className="joke">
               <h4>
@@ -46,12 +47,14 @@ const Popup = ({ date, children, toggleModal, today }) => {
               <img
                 className="icons rotate"
                 src="https://cdn.pixabay.com/photo/2021/01/20/14/07/gift-5934366_1280.png"
+                alt="christmas-deco"
               />
             </div>
             <h3>Image of the day</h3>
             <img
               className="modal-img"
               src="https://i0.wp.com/www.german-way.com/wp-content/uploads/2022/01/chm_Berlin-Xmas21-Tor.jpg?ssl=1"
+              alt="christmas-deco"
             />
             <div className="joke">
               <h4>
