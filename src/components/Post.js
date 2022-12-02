@@ -1,11 +1,17 @@
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import "./Listpage.css"
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
+
+
 const Post = ({ post }) => {
+
   const dis = [post.bezirk];
   const districts = [...new Set(dis)];
   console.log(districts);
+  
   const display = post.lat.length ? (
+
     <div>
       <div id="map">
         <MapContainer
@@ -30,6 +36,7 @@ const Post = ({ post }) => {
           ></Marker>
         </MapContainer>
       </div>
+
       <div>
         <a
           id="maps-link"
@@ -41,7 +48,9 @@ const Post = ({ post }) => {
         </a>
       </div>
     </div>
+
   ) : (
+
     <div>
       <a
         id="maps-link"
@@ -55,14 +64,17 @@ const Post = ({ post }) => {
   );
 
   return (
+
     <article>
-      <h2>{post.name}</h2>
-      <h3>Opening times: {post.oeffnungszeiten}</h3>
-      <h4 id="von-bis">
+      <h3>{post.name}</h3>
+      {post.oeffnungszeiten && <h4>Opening hours: {post.oeffnungszeiten.replace("Mo" ,"Mon").replace("täglich", "daily").replace("Di", "Tue")
+      .replace("Sa", "Sat").replace("So", "Sun").replace("Do", "Thu").replace("Fr","Fri")}</h4>}
+      {/* <h4 id="von-bis">
         From: {post.von} to {post.bis}
-      </h4>
-      <p>District: {post.bezirk}</p>
+      </h4> */}
+      {/* <p>District: {post.bezirk}</p> */}
       <Popup trigger={<button> More Information</button>} position="center">
+
         <div>
           <h3>{post.name}</h3>
           <div>
@@ -72,6 +84,7 @@ const Post = ({ post }) => {
         </div>
       </Popup>
     </article>
+
   );
 };
 export default Post;

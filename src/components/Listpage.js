@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Post from "./Post";
+import "./Listpage.css"
+
 const districts = [
   "Mitte",
   "Lichtenberg",
@@ -20,11 +22,11 @@ const ListPage = ({ posts }) => {
     .filter((post) => post.bezirk.includes(district))
     .map((post, i) => <Post key={i} post={post} />);
   return (
-    <main>
-      <div>
+    <main >
+      <div className="districts">
         {districts.map((e) => {
           return (
-            <button value={e} onClick={(e) => setDistrict(e.target.value)}>
+            <button className="filter-district" value={e} onClick={(e) => setDistrict(e.target.value)}>
               {e}
             </button>
           );

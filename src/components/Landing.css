@@ -28,7 +28,7 @@ a:-webkit-any-link {
 .button {
     border: 1px solid rgb(38, 53, 38);
     color: rgb(38, 53, 38);
-    padding: 13px 20px;
+    padding: 12px 20px;
     /* content: ; */
     text-align: center;
     text-decoration: none;
@@ -43,14 +43,17 @@ a:-webkit-any-link {
 }
 strong {
     color: #CC231E;
+    /* color: rgb(250, 240, 227); */
+
     font-size: larger;
 }
 
 .buttons {
-
-    height: 57vh;
-}
-
-.block {
-    display: inline-grid;
+    display: grid;
+    position: absolute;
+    bottom: 1vh;
+    left: auto;
+    justify-content: center;
+    width: 100%;
+    
 }

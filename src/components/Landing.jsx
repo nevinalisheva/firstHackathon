@@ -3,7 +3,12 @@ import React from "react";
 import Snowfall from 'react-snowfall';
 // import tree from "../../public/tree2.jpg";
 
-function Landing() {
+function Landing({List}) {
+  const scrollDown = () => {
+    window.scrollTo({
+      top: List.current?.scrollIntoView({behavior: 'smooth'})
+    });
+  };
     return (
       <div className="landing">
         <Snowfall />
@@ -11,14 +16,12 @@ function Landing() {
             <h1>Christmas in <strong>Berlin</strong></h1>  
         </div>
         <div className="buttons">
-        </div>
-        <div className="block">
-        <div className="button">
-                <a href="a">Discover</a>
-        </div>
-        <div className="button">
-            <a href="a">Get Inspired</a>
-        </div>
+          <div className="button" onClick={() => scrollDown(List)}>
+            <p>Discover</p>
+          </div>
+          <div className="button" onClick={scrollDown}>
+            <p>Get Inspired</p>
+          </div>
         </div>
       
         
