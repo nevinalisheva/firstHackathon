@@ -6,7 +6,7 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const element = <FontAwesomeIcon icon={faCoffee} />;
 
-ReactDOM.render(element, document.getElementById("root"));
+/* ReactDOM.render(element, document.getElementById("root")); */
 
 const Nav = () => {
   return (

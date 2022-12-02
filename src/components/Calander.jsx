@@ -4,11 +4,11 @@ import CalanderCard from "./CalanderCard";
 
 const Calander = ({ children }) => {
   const arr = [...Array(25).keys()].slice(1);
-  console.log(arr);
+  //console.log(arr);
   return (
     <div className="container">
-      {arr.map((date) => {
-        return <CalanderCard date={date} />;
+      {arr.map((date, i) => {
+        return <CalanderCard key={i} date={date} />;
       })}
       {children}
     </div>

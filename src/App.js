@@ -5,12 +5,11 @@ import Nav from "./components/Nav";
 import Landing from "./components/Landing";
 import { getPosts } from "./api";
 import ListPage from "./components/Listpage";
-import { useRef } from 'react';
+import { useRef } from "react";
 
 function App() {
   const [posts, setPosts] = useState([]);
   const List = useRef(null);
-
 
   useEffect(() => {
     getPosts().then((json) => {
@@ -23,12 +22,10 @@ function App() {
   }
   return (
     <div className="App">
-      
-      <Landing List={List}/>
-      <ListPage posts={posts} ref={List}/>
+      <Landing List={List} />
+      <ListPage posts={posts} ref={List} />
       <Calander>{/* <Nav /> */}</Calander>
     </div>
-
   );
 }
 
