@@ -24,9 +24,7 @@
   cursor: pointer;
   background-color: transparent;
   height: 6rem;
-  /* width: 80px;  */
-  /* perspective: 1000px; */
-  /* margin: 1em; */
+
   border: none;
   background-color: var(--light-green);
   margin: 0.4rem;
@@ -38,6 +36,7 @@
 .icons {
   font-size: 1.5rem;
 }
+
 .card-today {
   cursor: pointer;
   /* background-color: transparent; */
@@ -96,9 +95,32 @@
   min-width: 300px;
   z-index: 10000 !important;
 }
-/* body.active-modal {
-  overflow-y: hidden;
-} */
+.modal-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+}
+
 body.modal-active {
   overflow-y: hidden;
+}
+.modal-content .icons {
+  height: 100px;
+  width: 100px;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
