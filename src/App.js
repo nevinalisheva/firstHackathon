@@ -6,6 +6,8 @@ import Landing from "./components/Landing";
 import { getPosts } from "./api";
 import ListPage from "./components/Listpage";
 import { useRef } from "react";
+import sound from "react";
+import song from "./song.mp3";
 
 function App() {
   const [posts, setPosts] = useState([]);

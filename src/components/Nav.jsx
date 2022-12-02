@@ -3,6 +3,7 @@ import "./Calander.css";
 import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { FaBeer } from "react-icons/fa";
 
 const element = <FontAwesomeIcon icon={faCoffee} />;
 
@@ -15,11 +16,19 @@ const Nav = () => {
         <ul>
           <li>
             <a href="#" className="nav-link">
-              <FontAwesomeIcon icon="fa-sharp fa-solid fa-coffee" />
+              <FaBeer />
             </a>
           </li>
-          <li>cala</li>
-          <li>wellcome</li>
+          <li>
+            <a href="#" className="nav-link">
+              <FaBeer />
+            </a>
+          </li>
+          <li>
+            <a href="#" className="nav-link">
+              <FaBeer />
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
