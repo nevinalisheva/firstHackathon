@@ -95,13 +95,6 @@
   min-width: 300px;
   z-index: 10000 !important;
 }
-<<<<<<< HEAD
-/* body.active-modal {
-  overflow-y: hidden;
-} */
-/* scrolling impossible */
-/* body {
-=======
 .modal-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -112,11 +105,10 @@
   border-radius: 20px;
 }
 
->>>>>>> larsandme
-body.modal-active {
+/* body.modal-active {
   overflow-y: hidden;
 } */
-.cal-title {
+*/ .cal-title {
   color: white;
   text-align: center;
   margin-bottom: 0;
