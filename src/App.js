@@ -9,6 +9,7 @@ import song from "./song.mp3";
 import ScrollButton from "./components/ScrollButton";
 import Snowfall from "react-snowfall";
 import "./components/Landing.css";
+import BarLoader from "react-spinners/BarLoader";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -20,7 +21,15 @@ function App() {
   }, []);
   //console.log(posts);
   if (!posts.length) {
-    return "loading";
+    return (
+      <BarLoader
+        className="loader"
+        speedMultiplier={2}
+        color="#cc231e"
+        height={20}
+        width={300}
+      />
+    );
   }
   return (
     <div className="App">

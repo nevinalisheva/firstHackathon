@@ -13,16 +13,17 @@ article {
     
 }
 @keyframes gradient {
-    0% {
+  0% {
     background-position: 0% 0%;
-    }
-    50% {
+  }
+  50% {
     background-position: 100% 100%;
-    }
-    100% {
+  }
+  100% {
     background-position: 0% 0%;
-    }
-    }
+  }
+}
+
 
 .districts{
     display: grid;
@@ -31,36 +32,35 @@ article {
     margin-bottom: 10px;
     justify-content: center !important;
     object-position: center;
+
 }
 
 .filter-district {
-    /* padding: 5px;
+  /* padding: 5px;
     margin: 2px;
     border-radius: 5px;
     border:1px solid red */
 
-        border: 2px solid rgb(38, 53, 38);
-        font-family: cursive;
-        color: rgb(38, 53, 38);
-        background-color: rgb(250, 240, 227);
-        padding: 5px;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        /* display: inline-block; */
-        /* font-size: 20px; */
-        margin:2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        /* position: relative; */
-        bottom: 0;
-        font-weight: bold;
-    
-
+  border: 2px solid rgb(38, 53, 38);
+  font-family: cursive;
+  color: rgb(38, 53, 38);
+  background-color: rgb(250, 240, 227);
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  /* font-size: 20px; */
+  margin: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  /* position: relative; */
+  bottom: 0;
+  font-weight: bold;
 }
 
 #list {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .images-xmas {
@@ -114,4 +114,5 @@ h4 {
 .button-74:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
+
 }
