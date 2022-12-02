@@ -39,11 +39,13 @@
 
 .card-today {
   cursor: pointer;
+  transform: rotate(10deg);
+
   /* background-color: transparent; */
   height: 6rem;
 
-  background-color: var(--light-green);
-  box-shadow: 5px 5px 5px 5px #156ad2;
+  background-color: var(--dark-blue);
+  box-shadow: 5px 5px 5px 5px #192029;
 
   margin: 0.4rem;
   gap: 0;
