@@ -1,6 +1,6 @@
 import "./Landing.css";
 import React from "react";
-import Snowfall from 'react-snowfall';
+import Snowfall from "react-snowfall";
 
 function Landing() {
  
@@ -19,9 +19,16 @@ function Landing() {
           </div>
         </div>
       
-        
+      <div className="buttons">
+        <div className="button">
+          <a href="/#list">Discover</a>
+        </div>
+        <div className="button">
+          <a href="/#a">Get Inspired</a>
+        </div>
       </div>
-    );
-  }
-  
-  export default Landing;
+    </div>
+  );
+}
+
+export default Landing;

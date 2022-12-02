@@ -6,6 +6,7 @@ import { getPosts } from "./api";
 import ListPage from "./components/Listpage";
 import sound from "react";
 import song from "./song.mp3";
+import ScrollButton from "./components/ScrollButton";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -24,6 +25,7 @@ function App() {
       <Landing  />
       <ListPage posts={posts} />
       <Calander>{/* <Nav /> */}</Calander>
+      <ScrollButton />
     </div>
   );
 }
