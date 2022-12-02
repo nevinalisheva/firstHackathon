@@ -2,6 +2,7 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import "./Listpage.css"
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
+// import pics from "./pics_xmasmarket";
 
 
 const Post = ({ post }) => {

@@ -22,7 +22,7 @@ const ListPage = ({ posts }) => {
     .filter((post) => post.bezirk.includes(district))
     .map((post, i) => <Post key={i} post={post} />);
   return (
-    <main >
+    <main id="list">
       <div className="districts">
         {districts.map((e) => {
           return (

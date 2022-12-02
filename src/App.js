@@ -3,11 +3,9 @@ import "./App.css";
 import Landing from "./components/Landing";
 import { getPosts } from "./api";
 import ListPage from "./components/Listpage";
-import { useRef } from 'react';
 
 function App() {
   const [posts, setPosts] = useState([]);
-  const List = useRef(null);
 
 
   useEffect(() => {
@@ -21,8 +19,8 @@ function App() {
   }
   return (
     <div className="App" >
-      <Landing List={List}/>
-      <ListPage posts={posts} ref={List}/>
+      <Landing/>
+      <ListPage posts={posts}/>
     </div>
 
   );
