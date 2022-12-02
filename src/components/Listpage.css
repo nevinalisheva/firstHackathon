@@ -42,3 +42,9 @@ article {
 #list {
     overflow-y: scroll;
 }
+
+.images-xmas {
+    max-height: 200px;
+    width: 70%;
+
+}

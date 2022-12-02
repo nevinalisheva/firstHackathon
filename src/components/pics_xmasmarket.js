@@ -1,4 +1,4 @@
-const pics = [
+const picturesArr = [
 
 {"id": "12", "img": "https://images.t-online.de/2021/11/91165302v4/320x0:1280x1280/fit-in/1800x0/rodelbahn-auf-dem-potsdamer-platz-archivbild-die-winterwelt-bietet-spass-fuer-gross-und-klein.jpg"}, 
 
@@ -16,7 +16,7 @@ const pics = [
 
 {"id": "6", "img": "https://www.berlinstadtservice.de/images/Kulturweihnachtsmarkt_Wilmersdorf_I_bss.png"}, 
 
-{"id": "15", "https://img.fotocommunity.com/weihnachtsmarkt-am-alexanderplatz-bd9e787c-d73e-414a-8b57-14f66c1c7d44.jpg?height=1080"}, 
+{"id": "15", "img":"https://img.fotocommunity.com/weihnachtsmarkt-am-alexanderplatz-bd9e787c-d73e-414a-8b57-14f66c1c7d44.jpg?height=1080"}, 
 
 {"id": "18", "img": "https://www.berlinstadtservice.de/images/Weihnachtsmarkt_am_Roten_Rathaus_bss.png"}, 
 
@@ -48,7 +48,7 @@ const pics = [
 
 {"id": "135", "img": "https://www.weihnachtsmaerkte-in-deutschland.de/images/schwedischer-weihnachtsmarkt-in-berlin-wilmersdorf-1664829720.jpg"},
 
-{"id": "138", "img": "https://www.berlin.de/binaries/asset/image_assets/5084195/ratio_4_3/1664188705/800x600"/},
+{"id": "138", "img": "https://www.berlin.de/binaries/asset/image_assets/5084195/ratio_4_3/1664188705/800x600"},
 
 {"id": "174", "img": "https://www.onetz.de/f/ic/ga-large/articlemedia/2021/11/15/3a950938-e1cb-4dce-ba9d-9c95d368413c.jpg"},
 
@@ -58,13 +58,13 @@ const pics = [
 
 {"id": "54", "img": "https://media04.berliner-woche.de/article/2021/10/21/2/379142_XXL.jpg"},
 
-{"id": "99", "img": "https://www.weihnachteninberlin.de/binaries/asset/image_assets/3251858/source/1384343450/624x468"/},
+{"id": "99", "img": "https://www.weihnachteninberlin.de/binaries/asset/image_assets/3251858/source/1384343450/624x468"},
 
 {"id": "123", "img": "https://www.rce-event.de/filepool/1465/202211/3593b97a-e2c2-42ba-894c-cee40c1bacb4/lichtermarkt-an-der-christuskirc.jpeg"},
 
 {"id": "126", "img": "https://www.tagesspiegel.de/images/imago0194679855hjpg/alternates/BASE_1_1_W1000/imago0194679855hjpg.jpeg"},
 
-{"id": "141", "img": "https://www.weihnachteninberlin.de/binaries/asset/image_assets/5640122/ratio_4_3/1663051581/800x600"/},
+{"id": "141", "img": "https://www.weihnachteninberlin.de/binaries/asset/image_assets/5640122/ratio_4_3/1663051581/800x600"},
 
 {"id": "159", "img": "https://www.stiftung-stadtkultur.de/wp-content/uploads/2019/12/HAR_5040-1024x682.jpg"},
 
@@ -184,4 +184,4 @@ const pics = [
 
 ]
 
-export default pics
+export default picturesArr

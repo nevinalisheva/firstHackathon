@@ -2,13 +2,15 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import "./Listpage.css"
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
-// import pics from "./pics_xmasmarket";
-
+import picturesArr from "./pics_xmasmarket";
+import "./Listpage.css"
 
 const Post = ({ post }) => {
   /*  const dis = [post.bezirk];
   const districts = [...new Set(dis)];
   console.log(districts); */
+
+  console.log(picturesArr)
   const display = post.lat.length ? (
 
     <div>
@@ -62,9 +64,11 @@ const Post = ({ post }) => {
     </div>
   );
 
+  const foundImage = picturesArr.filter(ele => ele.id===post.id);
   return (
 
     <article>
+      {foundImage && <img className="images-xmas" src={foundImage[0].img}></img>}
       <h3>{post.name}</h3>
       {post.oeffnungszeiten && <h4>Opening hours: {post.oeffnungszeiten.replace("Mo" ,"Mon").replace("täglich", "daily").replace("Di", "Tue")
       .replace("Sa", "Sat").replace("So", "Sun").replace("Do", "Thu").replace("Fr","Fri")}</h4>}

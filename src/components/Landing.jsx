@@ -11,7 +11,7 @@ function Landing() {
             <h1>Christmas in <strong>Berlin</strong></h1>  
         </div>
         <div className="buttons">
-          <div classname= "button">
+          <div className= "button">
             <a href="/#list">Discover</a>
           </div>
           <div className="button">
