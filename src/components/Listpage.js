@@ -26,13 +26,13 @@ const ListPage = ({ posts }) => {
     <main id="list">
       <Snowfall />
     <div className="districts">
-        <button className="filter-district" value="" onClick={(e) => setDistrict(e.target.value)}>
+        <button className="button-74" value="" onClick={(e) => setDistrict(e.target.value)}>
           {" "}
           Show all
         </button>
         {districts.map((e, i) => {
           return (
-            <button className="filter-district"
+            <button className="button-74"
               key={i}
               value={e}
               onClick={(e) => setDistrict(e.target.value)}
