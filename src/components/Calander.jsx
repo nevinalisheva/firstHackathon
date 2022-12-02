@@ -6,11 +6,17 @@ const Calander = ({ children }) => {
   const arr = [...Array(25).keys()].slice(1);
   console.log(arr);
   return (
-    <div className="container">
-      {arr.map((date) => {
-        return <CalanderCard date={date} />;
-      })}
-      {children}
+    <div className="page">
+      <div className="container">
+        {arr.map((date) => {
+          return (
+            <div key={date}>
+              <CalanderCard date={date} />
+            </div>
+          );
+        })}
+        {children}
+      </div>
     </div>
   );
 };

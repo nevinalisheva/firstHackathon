@@ -11,3 +11,9 @@
   position: fixed;
   background-color: var(--dark-blue);
 } */
+/* 
+@media (min-width: 700px) {
+  body {
+    display: none;
+  }
+} */
