@@ -1,0 +1,59 @@
+.landing {
+    height: 100vh;
+    background-color: rgb(147, 147, 36);
+    background-image: url("../../public/img.jpeg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+    background-size: cover
+    /* display: flex; */
+}
+
+.heading {
+    color: rgb(38, 53, 38);
+    /* padding-top: 1.5%; */
+    /* font-style: italic; */
+    font-family: cursive;
+    /* transform: rotate(-10deg); */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a:-webkit-any-link {
+    color: rgb(38, 53, 38);
+    cursor: pointer;
+    text-decoration: none
+}
+
+.button {
+    border: 1px solid rgb(38, 53, 38);
+    color: rgb(38, 53, 38);
+    padding: 12px 20px;
+    /* content: ; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    /* position: relative; */
+    bottom: 0;
+
+}
+strong {
+    color: #CC231E;
+    /* color: rgb(250, 240, 227); */
+
+    font-size: larger;
+}
+
+.buttons {
+    display: grid;
+    position: absolute;
+    bottom: 1vh;
+    left: auto;
+    justify-content: center;
+    width: 100%;
+    
+}
