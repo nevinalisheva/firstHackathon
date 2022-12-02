@@ -43,7 +43,7 @@
   height: 6rem;
 
   background-color: var(--light-green);
-  box-shadow: 5px 5px 5px 5px #156ad2;
+  box-shadow: 5px 5px 5px 5px black;
 
   margin: 0.4rem;
   gap: 0;
