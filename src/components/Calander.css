@@ -42,9 +42,8 @@
   /* background-color: transparent; */
   height: 6rem;
 
-  /* border: 0.6rem dotted var(--dark-blue); */
   background-color: var(--light-green);
-  box-shadow: 5px 15px 5px #000000;
+  box-shadow: 5px 5px 5px 5px #156ad2;
 
   margin: 0.4rem;
   gap: 0;
@@ -60,12 +59,6 @@
   font-size: 1em;
   text-align: center;
 }
-/* .nav {
-  width: 100vh;
-  height: 8rem;
-  position: fixed;
-  background-color: var(--red);
-} */
 
 .modal,
 .overlay {
@@ -76,6 +69,8 @@
   right: 0;
   bottom: 0;
   position: fixed;
+  color: var(--dark-blue);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .overlay {
   background: rgba(49, 49, 49, 0.5);
@@ -87,21 +82,23 @@
   transform: translate(-50%, -50%);
   line-height: 1.4;
   /* background: #f1f1f1; */
-  background-color: var(--light-red);
-
+  /* background-color: var(--light-red); */
+  background-image: url("https://cdn.pixabay.com/photo/2020/12/08/14/34/santa-claus-5814597_1280.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
   padding: 14px 28px;
   border-radius: 3px;
   max-width: 600px;
   min-width: 300px;
   z-index: 10000 !important;
 }
-<<<<<<< HEAD
 /* body.active-modal {
   overflow-y: hidden;
 } */
 /* scrolling impossible */
-/* body {
-=======
+/* body { */
 .modal-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -112,10 +109,9 @@
   border-radius: 20px;
 }
 
->>>>>>> larsandme
 body.modal-active {
   overflow-y: hidden;
-} */
+}
 .cal-title {
   color: white;
   text-align: center;
@@ -136,4 +132,10 @@ body.modal-active {
   to {
     transform: rotate(359deg);
   }
+}
+.premis {
+  display: none;
+}
+.show {
+  display: block;
 }
