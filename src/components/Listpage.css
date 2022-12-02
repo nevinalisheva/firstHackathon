@@ -1,16 +1,13 @@
 article {
-    background: linear-gradient(
-        315deg,  #0F8A5F 20%, rgb(38, 53, 38) 65%
-    );
-    animation: gradient 15s ease infinite;
-    border-radius: 10px;
-    height: 50vh;
-    padding: 10px;
-    margin: 10px 15px;
-    border: 1px solid black;
-    object-position: center;
-    justify-content: center !important;
-    
+  background: linear-gradient(315deg, #0f8a5f 20%, rgb(38, 53, 38) 65%);
+  animation: gradient 15s ease infinite;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px 15px;
+  border: 1px solid black;
+  object-position: center;
+  justify-content: center !important;
 }
 @keyframes gradient {
   0% {
@@ -24,15 +21,13 @@ article {
   }
 }
 
-
-.districts{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    justify-content: center !important;
-    object-position: center;
-
+.districts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: center !important;
+  object-position: center;
 }
 
 .filter-district {
@@ -64,26 +59,26 @@ article {
 }
 
 .images-xmas {
-    height: 200px;
-    width: auto;
-    width: 310px;
-    object-fit: cover;
-    border-radius: 5px;
-    object-position: center;
-    
+  height: 200px;
+  width: auto;
+  width: 310px;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: center;
 }
 
 h5 {
-    margin-bottom: 5px;
-    margin-top: 0;
-    color: white;
+  margin-bottom: 5px;
+  margin-top: 0;
+  color: white;
+  padding: 1em;
+  font-size: 13px;
 }
 
 h4 {
-    margin-top: 10px;
-    color: white;
+  margin-top: 10px;
+  color: white;
 }
-
 
 /* CSS */
 .button-74 {
@@ -91,7 +86,7 @@ h4 {
   border: 2px solid rgb(38, 53, 38);
   border-radius: 30px;
   box-shadow: rgb(38, 53, 38) 4px 4px 0 0;
-  color:rgb(38, 53, 38);
+  color: rgb(38, 53, 38);
   cursor: pointer;
   display: inline-block;
   font-family: cursive;
@@ -114,5 +109,4 @@ h4 {
 .button-74:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
-
 }
