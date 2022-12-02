@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
 :root {
   --light-red: #f5624d;
   --red: #cc231e;
@@ -51,6 +47,12 @@ html {
     transform: rotate(360deg);
   }
 }
+/* .nav {
+  width: 100vh;
+  height: 6rem;
+  position: fixed;
+  background-color: var(--dark-blue);
+} */
 
 #map {
   height: 180px;
@@ -60,3 +62,9 @@ html {
   height: 100%;
   z-index: 1;
 }
+/* 
+@media (min-width: 700px) {
+  body {
+    display: none;
+  }
+} */
