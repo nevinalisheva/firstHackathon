@@ -7,6 +7,8 @@ import ListPage from "./components/Listpage";
 import sound from "react";
 import song from "./song.mp3";
 import ScrollButton from "./components/ScrollButton";
+import Snowfall from "react-snowfall";
+import "./components/Landing.css";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -22,10 +24,13 @@ function App() {
   }
   return (
     <div className="App">
+  
       <Landing  />
       <ListPage posts={posts} />
+      <Snowfall />
       <Calander>{/* <Nav /> */}</Calander>
       <ScrollButton />
+      <Snowfall />
     </div>
   );
 }

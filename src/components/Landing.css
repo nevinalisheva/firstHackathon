@@ -27,7 +27,7 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
-a {
+.landing-button {
 	display: inline-block;
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
