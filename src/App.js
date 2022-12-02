@@ -33,12 +33,11 @@ function App() {
   }
   return (
     <div className="App">
-      <Landing />
-      <ListPage posts={posts} />
       <Snowfall />
+      <Landing  />
+      <ListPage posts={posts} />
       <Calander>{/* <Nav /> */}</Calander>
       <ScrollButton />
-      <Snowfall />
     </div>
   );
 }

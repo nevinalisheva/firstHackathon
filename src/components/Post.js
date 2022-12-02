@@ -62,11 +62,11 @@ const Post = ({ post }) => {
   return (
     <article>
       {foundImage && (
-        <img className="images-xmas" src={foundImage[0].img}></img>
+        <img alt="img" className="images-xmas" src={foundImage[0].img}></img>
       )}
-      <h3>{post.name}</h3>
+      <h4>{post.name.slice(0,61) }</h4>
       {post.oeffnungszeiten && (
-        <h4>
+        <h5>
           Opening hours:{" "}
           {post.oeffnungszeiten
             .replace("Mo", "Mon")
@@ -75,18 +75,20 @@ const Post = ({ post }) => {
             .replace("Sa", "Sat")
             .replace("So", "Sun")
             .replace("Do", "Thu")
-            .replace("Fr", "Fri")}
-        </h4>
+            .replace("Fr", "Fri").slice(0,40)}
+        </h5>
       )}
       {/* <h4 id="von-bis">
         From: {post.von} to {post.bis}
       </h4> */}
       {/* <p>District: {post.bezirk}</p> */}
+
       <Popup
         trigger={<button className="small-buttons"> More Information</button>}
         position="center"
         {...{ contentStyle }}
       >
+
         <div>
           <h3>{post.name}</h3>
           <div>
