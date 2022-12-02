@@ -15,7 +15,7 @@
   pointer-events: none;
 }
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -68,3 +68,10 @@ html {
     display: none;
   }
 } */
+.loader {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 50%;
+}
