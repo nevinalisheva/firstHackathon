@@ -4,13 +4,8 @@ import "./Listpage.css";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import picturesArr from "./pics_xmasmarket";
 import "./Listpage.css";
-
+const contentStyle = { background: "#0f8a5f" };
 const Post = ({ post }) => {
-  /*  const dis = [post.bezirk];
-  const districts = [...new Set(dis)];
-  console.log(districts); */
-
-  //console.log(picturesArr)
   const display = post.lat.length ? (
     <div>
       <div id="map">
@@ -43,8 +38,9 @@ const Post = ({ post }) => {
           href={`https://www.google.com/maps/search/?api=1&query=${post.strasse}`}
           target="_blank"
           rel="noreferrer"
+          className="small-buttons"
         >
-          Show on the Map
+          Show the route
         </a>
       </div>
     </div>
@@ -55,8 +51,9 @@ const Post = ({ post }) => {
         href={`https://www.google.com/maps/search/?api=1&query=${post.strasse}`}
         target="_blank"
         rel="noreferrer"
+        className="small-buttons"
       >
-        Show on the Map
+        Show the route
       </a>
     </div>
   );
@@ -85,7 +82,11 @@ const Post = ({ post }) => {
         From: {post.von} to {post.bis}
       </h4> */}
       {/* <p>District: {post.bezirk}</p> */}
-      <Popup trigger={<button> More Information</button>} position="center">
+      <Popup
+        trigger={<button className="small-buttons"> More Information</button>}
+        position="center"
+        {...{ contentStyle }}
+      >
         <div>
           <h3>{post.name}</h3>
           <div>
