@@ -11,7 +11,6 @@ const districts = [
   "Steglitz-Zehlendorf",
   "Reinickendorf",
   "Tempelhof-Schöneberg",
-  "Marzahn-Hellersdorf",
   "Treptow-Köpenick",
   "Neukölln",
   "Pankow",
@@ -25,13 +24,13 @@ const ListPage = ({ posts }) => {
 
     <main id="list">
     <div className="districts">
-        <button value="" onClick={(e) => setDistrict(e.target.value)}>
+        <button className="filter-district" value="" onClick={(e) => setDistrict(e.target.value)}>
           {" "}
           Show all
         </button>
         {districts.map((e, i) => {
           return (
-            <button
+            <button className="filter-district"
               key={i}
               value={e}
               onClick={(e) => setDistrict(e.target.value)}
