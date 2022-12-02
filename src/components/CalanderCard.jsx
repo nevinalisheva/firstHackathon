@@ -11,10 +11,13 @@ const CalanderCard = ({ date, open }) => {
     new Audio(song).play();
   };
   const [isOpen, setIsOpen] = useState(false);
+  const [isplaying, setIsPlaying] = useState(isOpen);
+  //   const [playing, setPlaying] = useState(false);
   const toggleModal = () => {
     setIsOpen(!isOpen);
-    play();
   };
+  if (isOpen !== false) play();
+
   isOpen
     ? document.body.classList.add("modal-active")
     : document.body.classList.remove("modal-active");
@@ -25,14 +28,14 @@ const CalanderCard = ({ date, open }) => {
   return (
     <div
       className={date === today ? "card-today" : "card"}
-      onClick={date === today && toggleModal}
+      onClick={date <= today && toggleModal}
     >
       <div className="card-front">
         <h1>{date} </h1>
       </div>
       <div className="icons">{/* <FaBeer /> */}</div>
 
-      {isOpen && <Popup date={date} toggleModal={toggleModal} />}
+      {isOpen && <Popup date={date} today={today} toggleModal={toggleModal} />}
     </div>
   );
 };
