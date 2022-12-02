@@ -4,7 +4,7 @@ import "./Listpage.css";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import picturesArr from "./pics_xmasmarket";
 import "./Listpage.css";
-const contentStyle = { background: "#0f8a5f" };
+const contentStyle = { background: "#0f8a5f", width: "65%" };
 const Post = ({ post }) => {
   const display = post.lat.length ? (
     <div>
