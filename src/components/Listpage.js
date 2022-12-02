@@ -23,8 +23,8 @@ const ListPage = ({ posts }) => {
     .map((post, i) => <Post key={i} post={post} />);
   return (
 
-    <main>
-      <div>
+    <main id="list">
+    <div className="districts">
         <button value="" onClick={(e) => setDistrict(e.target.value)}>
           {" "}
           Show all

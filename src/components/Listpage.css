@@ -9,11 +9,42 @@ article {
 .districts{
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .filter-district {
-    padding: 5px;
+    /* padding: 5px;
     margin: 2px;
     border-radius: 5px;
-    border:1px solid red
+    border:1px solid red */
+
+        border: 2px solid rgb(38, 53, 38);
+        font-family: cursive;
+        color: rgb(38, 53, 38);
+        background-color: rgb(250, 240, 227);
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        /* display: inline-block; */
+        /* font-size: 20px; */
+        margin:2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        /* position: relative; */
+        bottom: 0;
+        font-weight: bold;
+    
+
+}
+
+#list {
+    overflow-y: scroll;
+}
+
+.images-xmas {
+    max-height: 200px;
+    width: 70%;
+
 }
