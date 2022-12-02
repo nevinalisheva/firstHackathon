@@ -7,6 +7,7 @@ const Calander = ({ children }) => {
   //console.log(arr);
   return (
     <div className="page">
+      <h1 className="cal-title">Adventskalender</h1>
       <div className="container">
         {arr.map((date) => {
           return (
