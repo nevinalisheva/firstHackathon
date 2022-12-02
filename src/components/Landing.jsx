@@ -15,7 +15,7 @@ function Landing() {
             <a href="/#list">Discover</a>
           </div>
           <div className="button">
-            <a href="/#a">Get Inspired</a>
+            <a href="/#page">Advent Calendar</a>
           </div>
         </div>
       
