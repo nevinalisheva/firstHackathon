@@ -1,6 +1,6 @@
 article {
     background: linear-gradient(
-        315deg,  white 25%, #cc231e 60%
+        315deg,  #34A65F 10%, #0F8A5F 20%, rgb(38, 53, 38) 65%
     );
     animation: gradient 15s ease infinite;
     
@@ -59,7 +59,7 @@ article {
 }
 
 .images-xmas {
-    max-height: 200px;
-    width: 70%;
+    max-height: 300px;
+    width: 80%;
 
 }

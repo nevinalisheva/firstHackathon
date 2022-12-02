@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Post from "./Post";
-import "./Listpage.css"
+import "./Listpage.css";
+import Snowfall from "react-snowfall";
 
 const districts = [
   "Mitte",
@@ -23,6 +24,7 @@ const ListPage = ({ posts }) => {
   return (
 
     <main id="list">
+      <Snowfall />
     <div className="districts">
         <button className="filter-district" value="" onClick={(e) => setDistrict(e.target.value)}>
           {" "}

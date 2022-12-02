@@ -65,9 +65,9 @@ const Post = ({ post }) => {
   return (
     <article>
       {foundImage && (
-        <img className="images-xmas" src={foundImage[0].img}></img>
+        <img alt="img" className="images-xmas" src={foundImage[0].img}></img>
       )}
-      <h3>{post.name}</h3>
+      <h3>{post.name }</h3>
       {post.oeffnungszeiten && (
         <h4>
           Opening hours:{" "}
