@@ -2,9 +2,9 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 const Post = ({ post }) => {
-  const dis = [post.bezirk];
+  /*  const dis = [post.bezirk];
   const districts = [...new Set(dis)];
-  console.log(districts);
+  console.log(districts); */
   const display = post.lat.length ? (
     <div>
       <div id="map">

@@ -22,9 +22,17 @@ const ListPage = ({ posts }) => {
   return (
     <main>
       <div>
-        {districts.map((e) => {
+        <button value="" onClick={(e) => setDistrict(e.target.value)}>
+          {" "}
+          Show all
+        </button>
+        {districts.map((e, i) => {
           return (
-            <button value={e} onClick={(e) => setDistrict(e.target.value)}>
+            <button
+              key={i}
+              value={e}
+              onClick={(e) => setDistrict(e.target.value)}
+            >
               {e}
             </button>
           );
