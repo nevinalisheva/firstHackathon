@@ -6,7 +6,7 @@
   object-fit: fill; */
   background-color: var(--red);
   width: 100%;
-  height: auto;
+  height: 100vh;
   /* margin: 3rem 0; */
 }
 

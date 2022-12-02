@@ -1,15 +1,17 @@
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import "./Listpage.css"
+import "./Listpage.css";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
-
+import picturesArr from "./pics_xmasmarket";
+import "./Listpage.css";
 
 const Post = ({ post }) => {
   /*  const dis = [post.bezirk];
   const districts = [...new Set(dis)];
   console.log(districts); */
-  const display = post.lat.length ? (
 
+  //console.log(picturesArr)
+  const display = post.lat.length ? (
     <div>
       <div id="map">
         <MapContainer
@@ -46,9 +48,7 @@ const Post = ({ post }) => {
         </a>
       </div>
     </div>
-
   ) : (
-
     <div>
       <a
         id="maps-link"
@@ -61,18 +61,31 @@ const Post = ({ post }) => {
     </div>
   );
 
+  const foundImage = picturesArr.filter((ele) => ele.id === post.id);
   return (
-
     <article>
+      {foundImage && (
+        <img className="images-xmas" src={foundImage[0].img}></img>
+      )}
       <h3>{post.name}</h3>
-      {post.oeffnungszeiten && <h4>Opening hours: {post.oeffnungszeiten.replace("Mo" ,"Mon").replace("täglich", "daily").replace("Di", "Tue")
-      .replace("Sa", "Sat").replace("So", "Sun").replace("Do", "Thu").replace("Fr","Fri")}</h4>}
+      {post.oeffnungszeiten && (
+        <h4>
+          Opening hours:{" "}
+          {post.oeffnungszeiten
+            .replace("Mo", "Mon")
+            .replace("täglich", "daily")
+            .replace("Di", "Tue")
+            .replace("Sa", "Sat")
+            .replace("So", "Sun")
+            .replace("Do", "Thu")
+            .replace("Fr", "Fri")}
+        </h4>
+      )}
       {/* <h4 id="von-bis">
         From: {post.von} to {post.bis}
       </h4> */}
       {/* <p>District: {post.bezirk}</p> */}
       <Popup trigger={<button> More Information</button>} position="center">
-
         <div>
           <h3>{post.name}</h3>
           <div>
@@ -82,7 +95,6 @@ const Post = ({ post }) => {
         </div>
       </Popup>
     </article>
-
   );
 };
 export default Post;

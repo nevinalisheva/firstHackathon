@@ -6,8 +6,7 @@ const Calander = ({ children }) => {
   const arr = [...Array(25).keys()].slice(1);
   //console.log(arr);
   return (
-    <div className="page">
-      <h1 className="cal-title">Adventskalender</h1>
+    <div className="page" id="page">
       <div className="container">
         {arr.map((date) => {
           return (
